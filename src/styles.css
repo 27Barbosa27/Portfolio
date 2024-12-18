@@ -1,0 +1,370 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    /*outline: 1px solid red;*/
+}
+
+/* Body */
+body {
+    color: #fff;
+    text-align: center;
+    /* Gradiente */
+    background: linear-gradient(0deg, rgba(16,16,16,1) 0%, rgba(0,0,0,1) 84%);
+    /* Evita repetição do background */
+    background-repeat: no-repeat;
+    /* Faz o background ocupar toda a tela */
+    background-size: cover;
+    /* Mantém o background fixo ao rolar a página */
+    background-attachment: fixed;
+    
+}
+
+
+.rectangle {
+    overflow-y: auto; /* Permite rolagem vertical */
+    position: relative; /* Referência para os elementos absolutos dentro */
+    background-color: #101010; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    width: 1200px; /* Largura do quadrado */
+    height: 700px; /* Altura fixa */
+    margin: 100px auto; /* Centraliza o quadrado na página */
+    border-radius: 10px; /* Bordas levemente arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha o conteúdo no topo */
+    text-align: center; /* Centraliza o texto */
+    overflow: hidden; /* Evita que a navbar saia do quadrado */
+    /* Adiciona algum preenchimento interno */
+}
+
+.scrollpage{
+    width: 100%;
+    margin-top: 40px;
+    overflow: auto;
+}
+/* Personalizar a barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+    height: 10px; /* Altura da barra de rolagem para rolagem horizontal */
+}
+
+/* Personalizar a parte de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #101010; /* Cor de fundo da barra de rolagem */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+/* Personalizar o polegar da barra de rolagem (o "slider") */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do polegar */
+    border-radius: 10px; /* Borda arredondada do polegar */
+    border: 3px solid #101010; /* Borda ao redor do polegar */
+}
+
+/* Cor do polegar ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do polegar quando o mouse estiver sobre ele */
+}
+
+
+/* Profile Section */
+.profile {
+    display: flex; /* Usa o Flexbox para o layout */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaço entre a imagem e o título */
+    margin-top: 50px;
+}
+
+.profile-img {
+    margin-top: 70px;
+    width: 250px;
+    height: 250px;
+    margin-left: 115px;
+    margin-right: 150px;
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover;
+}
+
+.profile h1 {
+    font-size: 1.8rem;
+}
+
+/* About Section */
+.about {
+    margin: 30px auto;
+    width: 80%;
+    text-align: left;
+}
+
+.about h2 {
+    
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.about p {
+    
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.navbar {
+    position: absolute;
+    top: 0; /* Gruda no topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Ocupa toda a largura */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-top-left-radius: 10px; /* Arredonda as bordas no topo */
+    border-top-right-radius: 10px;
+                    
+}   
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar nav ul li a:hover {
+    color: #ccc;
+}
+.footer {
+    position: absolute; /* Permite posicionar os ícones no canto */
+    bottom: 20px; /* Distância do fundo */
+    left: 20px; /* Distância da esquerda */
+    display: flex; /* Para alinhar os ícones horizontalmente */
+    gap: 10px; /* Espaço entre os ícones */
+}
+
+.footer a {
+    color: #fff; /* Cor dos ícones */
+    font-size: 1.5rem; /* Tamanho dos ícones */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.footer a:hover {
+    color: #ccc; /* Cor ao passar o mouse */
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 10px;
+    
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    /*outline: 1px solid red;*/
+}
+
+/* Body */
+body {
+    color: #fff;
+    text-align: center;
+    /* Gradiente */
+    background: linear-gradient(0deg, rgba(16,16,16,1) 0%, rgba(0,0,0,1) 84%);
+    /* Evita repetição do background */
+    background-repeat: no-repeat;
+    /* Faz o background ocupar toda a tela */
+    background-size: cover;
+    /* Mantém o background fixo ao rolar a página */
+    background-attachment: fixed;
+    
+}
+
+
+.rectangle {
+    overflow-y: auto; /* Permite rolagem vertical */
+    position: relative; /* Referência para os elementos absolutos dentro */
+    background-color: #101010; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    width: 1200px; /* Largura do quadrado */
+    height: 700px; /* Altura fixa */
+    margin: 100px auto; /* Centraliza o quadrado na página */
+    border-radius: 10px; /* Bordas levemente arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha o conteúdo no topo */
+    text-align: center; /* Centraliza o texto */
+    overflow: hidden; /* Evita que a navbar saia do quadrado */
+    /* Adiciona algum preenchimento interno */
+}
+
+.scrollpage{
+    width: 100%;
+    margin-top: 40px;
+    overflow: auto;
+}
+/* Personalizar a barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+    height: 10px; /* Altura da barra de rolagem para rolagem horizontal */
+}
+
+/* Personalizar a parte de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #101010; /* Cor de fundo da barra de rolagem */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+/* Personalizar o polegar da barra de rolagem (o "slider") */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do polegar */
+    border-radius: 10px; /* Borda arredondada do polegar */
+    border: 3px solid #101010; /* Borda ao redor do polegar */
+}
+
+/* Cor do polegar ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do polegar quando o mouse estiver sobre ele */
+}
+
+
+/* Profile Section */
+.profile {
+    display: flex; /* Usa o Flexbox para o layout */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaço entre a imagem e o título */
+    margin-top: 50px;
+}
+
+.profile-img {
+    margin-top: 70px;
+    width: 250px;
+    height: 250px;
+    margin-left: 115px;
+    margin-right: 150px;
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover;
+}
+
+.profile h1 {
+    font-size: 1.8rem;
+}
+
+/* About Section */
+.about {
+    margin: 30px auto;
+    width: 80%;
+    text-align: left;
+}
+
+.about h2 {
+    
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.about p {
+    
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.navbar {
+    position: absolute;
+    top: 0; /* Gruda no topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Ocupa toda a largura */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-top-left-radius: 10px; /* Arredonda as bordas no topo */
+    border-top-right-radius: 10px;
+                    
+}   
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar nav ul li a:hover {
+    color: #ccc;
+}
+.footer {
+    position: absolute; /* Permite posicionar os ícones no canto */
+    bottom: 20px; /* Distância do fundo */
+    left: 20px; /* Distância da esquerda */
+    display: flex; /* Para alinhar os ícones horizontalmente */
+    gap: 10px; /* Espaço entre os ícones */
+}
+
+.footer a {
+    color: #fff; /* Cor dos ícones */
+    font-size: 1.5rem; /* Tamanho dos ícones */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.footer a:hover {
+    color: #ccc; /* Cor ao passar o mouse */
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 10px;
+    
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
