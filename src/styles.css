@@ -194,6 +194,7 @@ body {
 
 /* Body */
 body {
+    font-family: "Kanit", serif;
     color: #fff;
     text-align: center;
     /* Gradiente */
@@ -209,6 +210,7 @@ body {
 
 
 .rectangle {
+    font-family: "Kanit", serif;
     overflow-y: auto; /* Permite rolagem vertical */
     position: relative; /* Referência para os elementos absolutos dentro */
     background-color: #101010; /* Fundo preto */
@@ -324,6 +326,7 @@ body {
     list-style: none;
     display: flex;
     gap: 20px;
+    font-weight: bold;
 }
 
 .navbar nav ul li a {
